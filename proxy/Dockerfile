@@ -10,4 +10,5 @@ COPY ./backend-not-found.html /var/www/html/backend-not-found.html
 COPY ./includes/ /etc/nginx/includes/
 
 # Proxy SSL certificates
-COPY ./ssl/ /etc/ssl/certs/nginx/
+#COPY ./ssl/ /etc/ssl/certs/nginx/
+VOLUME /etc/ssl/certs/nginx/
